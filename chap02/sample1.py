@@ -14,10 +14,16 @@ print('0. Current working dir:', os.getcwd())
 #----------------------------------------------------------------#
 print('-' * 80)
 
-df = pd.read_csv('doit_pandas\data\gapminder.tsv', sep = '\t')
+df = pd.read_csv('doit_pandas/data/gapminder.tsv', sep = '\t')   
+df = pd.read_csv('/home/acorn/Documents/pandas_workspace/doit_pandas/data/gapminder.tsv', sep = '\t')
+
+df = pd.read_csv('/home/acorn/Documents/pandas_workspace/doit_pandas/data/banklist.csv', sep = ',') 
+print("2. df['country']:", type(df['City']))
+
+
 
 print('1. df:', type(df))             # <class 'pandas.core.frame.DataFrame'>
-print("2. df['country']:", type(df['country']))  # <class 'pandas.core.series.Series'>
+print("2. df['country']:", type(df['country']))  # <class 'pandas.core.series.Series'> 
 
 
 #----------------------------------------------------------------#
